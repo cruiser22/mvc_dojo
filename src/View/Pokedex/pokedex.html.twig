@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+    {% block content %}
+<ul>{% for banane in bananes %}
+    <li> {{banane.name}} </li>
+    <li><img src='{{banane.picture}}'> </li>
+    <li> {{banane.level}} </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
